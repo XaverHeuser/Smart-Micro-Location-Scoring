@@ -1,2 +1,6 @@
+bandit==1.9.4
 folium==0.20.0
 ipykernel==7.2.0
+mypy==1.19.1
+pip-audit==2.10.0
+ruff==0.15.7
