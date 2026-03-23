@@ -1,0 +1,5 @@
+geopy==2.4.1
+overpy==0.7
+scipy==1.17.1
+torch==2.10.0
+torch_geometric==2.7.0

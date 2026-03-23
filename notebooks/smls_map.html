@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_13b77040ddee95b20a4d8914b7ad753b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_13b77040ddee95b20a4d8914b7ad753b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_13b77040ddee95b20a4d8914b7ad753b = L.map(
+                "map_13b77040ddee95b20a4d8914b7ad753b",
+                {
+                    center: [50.732063, 7.096739],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0c0df4c806cae3702aaa299ed39366b0 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0c0df4c806cae3702aaa299ed39366b0.addTo(map_13b77040ddee95b20a4d8914b7ad753b);
+        
+    
+            var marker_cluster_b7c6644496e7b274933b187339a1d6b5 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_88130e4ec986ba55d9f43935626efccd = L.circleMarker(
+                [50.7317635, 7.0993974],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_38a137594c37cc93a416080a84ea20de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_731b9ce8f39a0bff4a3567ee791bad89 = $(`<div id="html_731b9ce8f39a0bff4a3567ee791bad89" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_38a137594c37cc93a416080a84ea20de.setContent(html_731b9ce8f39a0bff4a3567ee791bad89);
+            
+        
+
+        circle_marker_88130e4ec986ba55d9f43935626efccd.bindPopup(popup_38a137594c37cc93a416080a84ea20de)
+        ;
+
+        
+    
+    
+            var circle_marker_7ff120a124adb65f70d074d936d0053e = L.circleMarker(
+                [50.7320025, 7.0967372],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_ad2ffd9aaa7e946af19b7f5610cad49d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4931b910ce02c065ebb688b539c5fc3d = $(`<div id="html_4931b910ce02c065ebb688b539c5fc3d" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_ad2ffd9aaa7e946af19b7f5610cad49d.setContent(html_4931b910ce02c065ebb688b539c5fc3d);
+            
+        
+
+        circle_marker_7ff120a124adb65f70d074d936d0053e.bindPopup(popup_ad2ffd9aaa7e946af19b7f5610cad49d)
+        ;
+
+        
+    
+    
+            var circle_marker_17ea58a58161dba41a5d7d98883ee0c4 = L.circleMarker(
+                [50.7325615, 7.0986046],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_9cc6b320219fe59b5b312a9fee6cc709 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_983681394b90bbd13b13d384e7f2d233 = $(`<div id="html_983681394b90bbd13b13d384e7f2d233" style="width: 100.0%; height: 100.0%;">Shopping: Denns BioMarkt</div>`)[0];
+                popup_9cc6b320219fe59b5b312a9fee6cc709.setContent(html_983681394b90bbd13b13d384e7f2d233);
+            
+        
+
+        circle_marker_17ea58a58161dba41a5d7d98883ee0c4.bindPopup(popup_9cc6b320219fe59b5b312a9fee6cc709)
+        ;
+
+        
+    
+    
+            var circle_marker_7b818b40742e9d18db68849c3c7c2df1 = L.circleMarker(
+                [50.7329267, 7.0960932],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_60249a22cc2b3e73ebc29de67171d3a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5162973e1ee6794d38af421b4b9e7b37 = $(`<div id="html_5162973e1ee6794d38af421b4b9e7b37" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_60249a22cc2b3e73ebc29de67171d3a8.setContent(html_5162973e1ee6794d38af421b4b9e7b37);
+            
+        
+
+        circle_marker_7b818b40742e9d18db68849c3c7c2df1.bindPopup(popup_60249a22cc2b3e73ebc29de67171d3a8)
+        ;
+
+        
+    
+    
+            var circle_marker_ab34bb4c593da648a74f7b107debc2b6 = L.circleMarker(
+                [50.7319234, 7.0966881],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_9ab9bb50530b34b61010acf708e80cab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e261f92d0de1d7b1cd91f791725a228 = $(`<div id="html_8e261f92d0de1d7b1cd91f791725a228" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_9ab9bb50530b34b61010acf708e80cab.setContent(html_8e261f92d0de1d7b1cd91f791725a228);
+            
+        
+
+        circle_marker_ab34bb4c593da648a74f7b107debc2b6.bindPopup(popup_9ab9bb50530b34b61010acf708e80cab)
+        ;
+
+        
+    
+    
+            var circle_marker_6d9bff10e77dbf52d43f75d18520a41f = L.circleMarker(
+                [50.7320888, 7.0986878],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_d3d6b4f090758c9481f9f797e3a2d9cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dfa462acaa9ba58ed97b32f74bae7d9c = $(`<div id="html_dfa462acaa9ba58ed97b32f74bae7d9c" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_d3d6b4f090758c9481f9f797e3a2d9cc.setContent(html_dfa462acaa9ba58ed97b32f74bae7d9c);
+            
+        
+
+        circle_marker_6d9bff10e77dbf52d43f75d18520a41f.bindPopup(popup_d3d6b4f090758c9481f9f797e3a2d9cc)
+        ;
+
+        
+    
+    
+            var circle_marker_a013ae2cd64214b52160406848b3324f = L.circleMarker(
+                [50.7319478, 7.0988917],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_e7c2b2e8319b4da09807aea86eac1f35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a1cb18c31367280a0c9e7bff9eb7a24 = $(`<div id="html_2a1cb18c31367280a0c9e7bff9eb7a24" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_e7c2b2e8319b4da09807aea86eac1f35.setContent(html_2a1cb18c31367280a0c9e7bff9eb7a24);
+            
+        
+
+        circle_marker_a013ae2cd64214b52160406848b3324f.bindPopup(popup_e7c2b2e8319b4da09807aea86eac1f35)
+        ;
+
+        
+    
+    
+            var circle_marker_28dda956f0e5a5c83d25a47f15213f64 = L.circleMarker(
+                [50.7331976, 7.096903],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_036bee77a46414b552320a4a574c3c25 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d887dfcb8daa84362e1616908607aa55 = $(`<div id="html_d887dfcb8daa84362e1616908607aa55" style="width: 100.0%; height: 100.0%;">Gastro: CassiusGarten</div>`)[0];
+                popup_036bee77a46414b552320a4a574c3c25.setContent(html_d887dfcb8daa84362e1616908607aa55);
+            
+        
+
+        circle_marker_28dda956f0e5a5c83d25a47f15213f64.bindPopup(popup_036bee77a46414b552320a4a574c3c25)
+        ;
+
+        
+    
+    
+            var circle_marker_833308cc5e8b024b93fbdb93ebb92f29 = L.circleMarker(
+                [50.7334261, 7.0982747],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_4131e25ee4949d62f59b95bbb3567d74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3896e4aa5d01031e704d3bb3106680ca = $(`<div id="html_3896e4aa5d01031e704d3bb3106680ca" style="width: 100.0%; height: 100.0%;">Gastro: Salvator</div>`)[0];
+                popup_4131e25ee4949d62f59b95bbb3567d74.setContent(html_3896e4aa5d01031e704d3bb3106680ca);
+            
+        
+
+        circle_marker_833308cc5e8b024b93fbdb93ebb92f29.bindPopup(popup_4131e25ee4949d62f59b95bbb3567d74)
+        ;
+
+        
+    
+    
+            var circle_marker_9a942f97f2ab0c227fd17d973f10341d = L.circleMarker(
+                [50.7309111, 7.0966169],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_b688e3044f0e056c43a810d75e0bf42e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c74d6129f88f62765d95b5e76284eae0 = $(`<div id="html_c74d6129f88f62765d95b5e76284eae0" style="width: 100.0%; height: 100.0%;">Bildung: Geschäftsführung des Rektorats der Universität Bonn</div>`)[0];
+                popup_b688e3044f0e056c43a810d75e0bf42e.setContent(html_c74d6129f88f62765d95b5e76284eae0);
+            
+        
+
+        circle_marker_9a942f97f2ab0c227fd17d973f10341d.bindPopup(popup_b688e3044f0e056c43a810d75e0bf42e)
+        ;
+
+        
+    
+    
+            var circle_marker_9ffcd15e557dfca32bdaf3345961247a = L.circleMarker(
+                [50.731887, 7.0990683],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_7fe4f2a1e745523a680155455df2f939 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de003a52fd6c8f6be3a8020596649774 = $(`<div id="html_de003a52fd6c8f6be3a8020596649774" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_7fe4f2a1e745523a680155455df2f939.setContent(html_de003a52fd6c8f6be3a8020596649774);
+            
+        
+
+        circle_marker_9ffcd15e557dfca32bdaf3345961247a.bindPopup(popup_7fe4f2a1e745523a680155455df2f939)
+        ;
+
+        
+    
+    
+            var circle_marker_3e714424e4b721c025db7eea77d186fd = L.circleMarker(
+                [50.7321454, 7.0990238],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_60e8cd024ebbc3047407a4737ca0a027 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d1a9b53c7b46f52676fcddcac22b3bd = $(`<div id="html_3d1a9b53c7b46f52676fcddcac22b3bd" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_60e8cd024ebbc3047407a4737ca0a027.setContent(html_3d1a9b53c7b46f52676fcddcac22b3bd);
+            
+        
+
+        circle_marker_3e714424e4b721c025db7eea77d186fd.bindPopup(popup_60e8cd024ebbc3047407a4737ca0a027)
+        ;
+
+        
+    
+    
+            var circle_marker_89ddb67ab53dc189bc120c1e9baa6fba = L.circleMarker(
+                [50.731871, 7.0988958],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_2fe1d9a4477a4f330fba364e20af4800 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce07c8c1042914fd238812676ba2e72c = $(`<div id="html_ce07c8c1042914fd238812676ba2e72c" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_2fe1d9a4477a4f330fba364e20af4800.setContent(html_ce07c8c1042914fd238812676ba2e72c);
+            
+        
+
+        circle_marker_89ddb67ab53dc189bc120c1e9baa6fba.bindPopup(popup_2fe1d9a4477a4f330fba364e20af4800)
+        ;
+
+        
+    
+    
+            var circle_marker_f2e4b58e9de06253ef80e6b244bd6f62 = L.circleMarker(
+                [50.7320172, 7.0991879],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_9287b3a710e922acd9881fca6a47870c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b635f67624844526d57986d1a2ac01df = $(`<div id="html_b635f67624844526d57986d1a2ac01df" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_9287b3a710e922acd9881fca6a47870c.setContent(html_b635f67624844526d57986d1a2ac01df);
+            
+        
+
+        circle_marker_f2e4b58e9de06253ef80e6b244bd6f62.bindPopup(popup_9287b3a710e922acd9881fca6a47870c)
+        ;
+
+        
+    
+    
+            var circle_marker_74aaeb9fe3a76102a8679b0fd2bb77f0 = L.circleMarker(
+                [50.7319716, 7.0994149],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_c93893ad0e67cb3f252bce9c6ded0ede = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dec0c7592d02038bfb952f9d90a31916 = $(`<div id="html_dec0c7592d02038bfb952f9d90a31916" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_c93893ad0e67cb3f252bce9c6ded0ede.setContent(html_dec0c7592d02038bfb952f9d90a31916);
+            
+        
+
+        circle_marker_74aaeb9fe3a76102a8679b0fd2bb77f0.bindPopup(popup_c93893ad0e67cb3f252bce9c6ded0ede)
+        ;
+
+        
+    
+    
+            var circle_marker_b5dcd9fc13dc5750b06971d7097311e3 = L.circleMarker(
+                [50.7321232, 7.096829],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_8bad2f9689ccea928b3619cd9091ed83 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b5804941569427364f5b374867ecb80 = $(`<div id="html_0b5804941569427364f5b374867ecb80" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_8bad2f9689ccea928b3619cd9091ed83.setContent(html_0b5804941569427364f5b374867ecb80);
+            
+        
+
+        circle_marker_b5dcd9fc13dc5750b06971d7097311e3.bindPopup(popup_8bad2f9689ccea928b3619cd9091ed83)
+        ;
+
+        
+    
+    
+            var circle_marker_1592d85c667ba69cbd663580a5824257 = L.circleMarker(
+                [50.7330782, 7.0961287],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_6bea0f081c5a4c592f05505d10eea472 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f934bea44c0220618e787d3011feefd1 = $(`<div id="html_f934bea44c0220618e787d3011feefd1" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_6bea0f081c5a4c592f05505d10eea472.setContent(html_f934bea44c0220618e787d3011feefd1);
+            
+        
+
+        circle_marker_1592d85c667ba69cbd663580a5824257.bindPopup(popup_6bea0f081c5a4c592f05505d10eea472)
+        ;
+
+        
+    
+    
+            var circle_marker_1f86bfc9d4f6489d501fa3f9a13d4fa4 = L.circleMarker(
+                [50.7328382, 7.0959933],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_f72e85c9026d1224341f06c9a3632c93 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_91aa2a9b2f2f36f3432fb31e408039a9 = $(`<div id="html_91aa2a9b2f2f36f3432fb31e408039a9" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_f72e85c9026d1224341f06c9a3632c93.setContent(html_91aa2a9b2f2f36f3432fb31e408039a9);
+            
+        
+
+        circle_marker_1f86bfc9d4f6489d501fa3f9a13d4fa4.bindPopup(popup_f72e85c9026d1224341f06c9a3632c93)
+        ;
+
+        
+    
+    
+            var circle_marker_d4dbed9c9aa7a438092f013aea847190 = L.circleMarker(
+                [50.7320864, 7.0968004],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_000b64c9e33496e1a36603388d097219 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51613b9f78062be34bc6622d27b88ae0 = $(`<div id="html_51613b9f78062be34bc6622d27b88ae0" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_000b64c9e33496e1a36603388d097219.setContent(html_51613b9f78062be34bc6622d27b88ae0);
+            
+        
+
+        circle_marker_d4dbed9c9aa7a438092f013aea847190.bindPopup(popup_000b64c9e33496e1a36603388d097219)
+        ;
+
+        
+    
+    
+            var circle_marker_96ab344609e4eab314edb21b6536e440 = L.circleMarker(
+                [50.7320711, 7.0980976],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_927ed882ae55b8f2406073997c81353e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_201a04dece5a05fce3c124c72d616513 = $(`<div id="html_201a04dece5a05fce3c124c72d616513" style="width: 100.0%; height: 100.0%;">ÖPNV: Hauptbahnhof</div>`)[0];
+                popup_927ed882ae55b8f2406073997c81353e.setContent(html_201a04dece5a05fce3c124c72d616513);
+            
+        
+
+        circle_marker_96ab344609e4eab314edb21b6536e440.bindPopup(popup_927ed882ae55b8f2406073997c81353e)
+        ;
+
+        
+    
+    
+            var circle_marker_7003a09114d75abaa8abcca4730d5d4e = L.circleMarker(
+                [50.7329609, 7.0961195],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_dd90bd6f56586ce2a5e92ba18d08c718 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4821e63038d741352754879bacf437f = $(`<div id="html_a4821e63038d741352754879bacf437f" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_dd90bd6f56586ce2a5e92ba18d08c718.setContent(html_a4821e63038d741352754879bacf437f);
+            
+        
+
+        circle_marker_7003a09114d75abaa8abcca4730d5d4e.bindPopup(popup_dd90bd6f56586ce2a5e92ba18d08c718)
+        ;
+
+        
+    
+    
+            var circle_marker_064858f570fa65567790f64f8b401574 = L.circleMarker(
+                [50.7317946, 7.0962042],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_17f50747f697527d4bf6897bd1146022 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c63bfa78355f5894b1c7b234c8f89270 = $(`<div id="html_c63bfa78355f5894b1c7b234c8f89270" style="width: 100.0%; height: 100.0%;">Shopping: Alnatura Super Natur Markt</div>`)[0];
+                popup_17f50747f697527d4bf6897bd1146022.setContent(html_c63bfa78355f5894b1c7b234c8f89270);
+            
+        
+
+        circle_marker_064858f570fa65567790f64f8b401574.bindPopup(popup_17f50747f697527d4bf6897bd1146022)
+        ;
+
+        
+    
+    
+            var circle_marker_68c7aaded56e8d58f13e7bf2ac9794ce = L.circleMarker(
+                [50.7321134, 7.0981956],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_308ecb11a897a7c25ba90f3acca5a077 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1cf3582f5107e645f277fe73b2ecc249 = $(`<div id="html_1cf3582f5107e645f277fe73b2ecc249" style="width: 100.0%; height: 100.0%;">ÖPNV: Hauptbahnhof</div>`)[0];
+                popup_308ecb11a897a7c25ba90f3acca5a077.setContent(html_1cf3582f5107e645f277fe73b2ecc249);
+            
+        
+
+        circle_marker_68c7aaded56e8d58f13e7bf2ac9794ce.bindPopup(popup_308ecb11a897a7c25ba90f3acca5a077)
+        ;
+
+        
+    
+    
+            var circle_marker_e82411b551b5c7816111f9b3afff575d = L.circleMarker(
+                [50.7316345, 7.0962828],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_c212f55440cbc88d41488435942ab78c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_afe80fe4b3e011a4068d401a783a6740 = $(`<div id="html_afe80fe4b3e011a4068d401a783a6740" style="width: 100.0%; height: 100.0%;">ÖPNV: Colmantstraße / Hauptbahnhof</div>`)[0];
+                popup_c212f55440cbc88d41488435942ab78c.setContent(html_afe80fe4b3e011a4068d401a783a6740);
+            
+        
+
+        circle_marker_e82411b551b5c7816111f9b3afff575d.bindPopup(popup_c212f55440cbc88d41488435942ab78c)
+        ;
+
+        
+    
+    
+            var circle_marker_1e89324573701297998b0ac2293e65c0 = L.circleMarker(
+                [50.733141, 7.0953353],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_a4b6e23717d9b61aed3b97e48c371415 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_46b40229d54c802c7c00d0eb07a09ae4 = $(`<div id="html_46b40229d54c802c7c00d0eb07a09ae4" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_a4b6e23717d9b61aed3b97e48c371415.setContent(html_46b40229d54c802c7c00d0eb07a09ae4);
+            
+        
+
+        circle_marker_1e89324573701297998b0ac2293e65c0.bindPopup(popup_a4b6e23717d9b61aed3b97e48c371415)
+        ;
+
+        
+    
+    
+            var circle_marker_8f66d07b1f7ead19b5ce5ce44c8d2b94 = L.circleMarker(
+                [50.7331767, 7.0953592],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_7b26edc81ea8a643830aea382e841907 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32406d9f49e011b8e9ea161eb26b93f6 = $(`<div id="html_32406d9f49e011b8e9ea161eb26b93f6" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_7b26edc81ea8a643830aea382e841907.setContent(html_32406d9f49e011b8e9ea161eb26b93f6);
+            
+        
+
+        circle_marker_8f66d07b1f7ead19b5ce5ce44c8d2b94.bindPopup(popup_7b26edc81ea8a643830aea382e841907)
+        ;
+
+        
+    
+    
+            var circle_marker_134d94b83c84012fdb5bca174ab589d2 = L.circleMarker(
+                [50.7328178, 7.0989972],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_f1294f973186fa91df89eb5712d170e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6fa2849263ed211b6000b0c4a14e6715 = $(`<div id="html_6fa2849263ed211b6000b0c4a14e6715" style="width: 100.0%; height: 100.0%;">Shopping: epi</div>`)[0];
+                popup_f1294f973186fa91df89eb5712d170e5.setContent(html_6fa2849263ed211b6000b0c4a14e6715);
+            
+        
+
+        circle_marker_134d94b83c84012fdb5bca174ab589d2.bindPopup(popup_f1294f973186fa91df89eb5712d170e5)
+        ;
+
+        
+    
+    
+            var circle_marker_ccfb06a96c60f8f46da8f17fc572b32b = L.circleMarker(
+                [50.7332788, 7.0962215],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_2c231e4efa6ff1eb2b202e8f302a636d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0482858cf5eb1d98cba12b136098870c = $(`<div id="html_0482858cf5eb1d98cba12b136098870c" style="width: 100.0%; height: 100.0%;">Gastro: Pizza Brothers</div>`)[0];
+                popup_2c231e4efa6ff1eb2b202e8f302a636d.setContent(html_0482858cf5eb1d98cba12b136098870c);
+            
+        
+
+        circle_marker_ccfb06a96c60f8f46da8f17fc572b32b.bindPopup(popup_2c231e4efa6ff1eb2b202e8f302a636d)
+        ;
+
+        
+    
+    
+            var circle_marker_8ff6a3b781f3222d645dc9953cfca530 = L.circleMarker(
+                [50.7318864, 7.0966574],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_46bb036bd73a4c21e0e206342895d9a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_abe5fa6b83443c1cd748b3e42bf56a07 = $(`<div id="html_abe5fa6b83443c1cd748b3e42bf56a07" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_46bb036bd73a4c21e0e206342895d9a4.setContent(html_abe5fa6b83443c1cd748b3e42bf56a07);
+            
+        
+
+        circle_marker_8ff6a3b781f3222d645dc9953cfca530.bindPopup(popup_46bb036bd73a4c21e0e206342895d9a4)
+        ;
+
+        
+    
+    
+            var circle_marker_019a76d25779a41826e5347053e07b6e = L.circleMarker(
+                [50.7330073, 7.0958883],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_70bd5a81202488053ee237ef437edb01 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_336678d62acf5c028cc5032de0e2a59b = $(`<div id="html_336678d62acf5c028cc5032de0e2a59b" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_70bd5a81202488053ee237ef437edb01.setContent(html_336678d62acf5c028cc5032de0e2a59b);
+            
+        
+
+        circle_marker_019a76d25779a41826e5347053e07b6e.bindPopup(popup_70bd5a81202488053ee237ef437edb01)
+        ;
+
+        
+    
+    
+            var circle_marker_310603017c3b28e7c9bb4e49ce45d4c7 = L.circleMarker(
+                [50.7321005, 7.0992767],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_892886f2463c778ff822316340e363fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fcf4943c262ff7087c50406f3b1b2de8 = $(`<div id="html_fcf4943c262ff7087c50406f3b1b2de8" style="width: 100.0%; height: 100.0%;">ÖPNV: Bonn Hauptbahnhof</div>`)[0];
+                popup_892886f2463c778ff822316340e363fe.setContent(html_fcf4943c262ff7087c50406f3b1b2de8);
+            
+        
+
+        circle_marker_310603017c3b28e7c9bb4e49ce45d4c7.bindPopup(popup_892886f2463c778ff822316340e363fe)
+        ;
+
+        
+    
+    
+            var circle_marker_264c105039e46deca29bdf6645d45824 = L.circleMarker(
+                [50.7338205, 7.096948],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_d23fa1f90a89cf18bdf7eb3295f58bf4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b09c1468daf6e0df1927a55e88db804 = $(`<div id="html_1b09c1468daf6e0df1927a55e88db804" style="width: 100.0%; height: 100.0%;">Gastro: Duos</div>`)[0];
+                popup_d23fa1f90a89cf18bdf7eb3295f58bf4.setContent(html_1b09c1468daf6e0df1927a55e88db804);
+            
+        
+
+        circle_marker_264c105039e46deca29bdf6645d45824.bindPopup(popup_d23fa1f90a89cf18bdf7eb3295f58bf4)
+        ;
+
+        
+    
+    
+            var circle_marker_0730bc440673ed49226502ad0f25761a = L.circleMarker(
+                [50.731106, 7.0984503],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_252ba5b9f9945807855bb73a9d2248be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a498b0c073a9bb4394618b1bb6d12b07 = $(`<div id="html_a498b0c073a9bb4394618b1bb6d12b07" style="width: 100.0%; height: 100.0%;">Gastro: okinii</div>`)[0];
+                popup_252ba5b9f9945807855bb73a9d2248be.setContent(html_a498b0c073a9bb4394618b1bb6d12b07);
+            
+        
+
+        circle_marker_0730bc440673ed49226502ad0f25761a.bindPopup(popup_252ba5b9f9945807855bb73a9d2248be)
+        ;
+
+        
+    
+    
+            var circle_marker_7a2e95f6970db8215f3df529a558e763 = L.circleMarker(
+                [50.7333945, 7.098493],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_d515330151256e9b0134def21bb2f3a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dce921f3a6ad68da5360b4555179694e = $(`<div id="html_dce921f3a6ad68da5360b4555179694e" style="width: 100.0%; height: 100.0%;">Gastro: L'Osteria</div>`)[0];
+                popup_d515330151256e9b0134def21bb2f3a6.setContent(html_dce921f3a6ad68da5360b4555179694e);
+            
+        
+
+        circle_marker_7a2e95f6970db8215f3df529a558e763.bindPopup(popup_d515330151256e9b0134def21bb2f3a6)
+        ;
+
+        
+    
+    
+            var circle_marker_2b9f327e4366a32c066df3a270c837c9 = L.circleMarker(
+                [50.7318811, 7.0943637],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_cbb5195a8161617f8242a86ade676e2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25bcdce9090af8a17ead7dd09fe3f900 = $(`<div id="html_25bcdce9090af8a17ead7dd09fe3f900" style="width: 100.0%; height: 100.0%;">Gastro: Kudos – Coffee, Cycling, Culture</div>`)[0];
+                popup_cbb5195a8161617f8242a86ade676e2a.setContent(html_25bcdce9090af8a17ead7dd09fe3f900);
+            
+        
+
+        circle_marker_2b9f327e4366a32c066df3a270c837c9.bindPopup(popup_cbb5195a8161617f8242a86ade676e2a)
+        ;
+
+        
+    
+    
+            var circle_marker_f3780131a8278916bec910787b391ccb = L.circleMarker(
+                [50.732977, 7.0968657],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_6d17e90a476b6bad3a30685530963a91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa07eaf8eeafaf04734d5b93f2aad223 = $(`<div id="html_aa07eaf8eeafaf04734d5b93f2aad223" style="width: 100.0%; height: 100.0%;">Shopping: Lidl</div>`)[0];
+                popup_6d17e90a476b6bad3a30685530963a91.setContent(html_aa07eaf8eeafaf04734d5b93f2aad223);
+            
+        
+
+        circle_marker_f3780131a8278916bec910787b391ccb.bindPopup(popup_6d17e90a476b6bad3a30685530963a91)
+        ;
+
+        
+    
+    
+            var circle_marker_0d3ffe980d20de3538ab33a31fe1cf18 = L.circleMarker(
+                [50.7330301, 7.0956529],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_c9afbf91869493d340ce0610154fdb5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff03ba73f1af443d0446e149ee804a4d = $(`<div id="html_ff03ba73f1af443d0446e149ee804a4d" style="width: 100.0%; height: 100.0%;">Shopping: Kaffeesaurus</div>`)[0];
+                popup_c9afbf91869493d340ce0610154fdb5b.setContent(html_ff03ba73f1af443d0446e149ee804a4d);
+            
+        
+
+        circle_marker_0d3ffe980d20de3538ab33a31fe1cf18.bindPopup(popup_c9afbf91869493d340ce0610154fdb5b)
+        ;
+
+        
+    
+    
+            var circle_marker_b17df6c2cf5dfb37bfd8a0175b96ee48 = L.circleMarker(
+                [50.7330803, 7.0964661],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_8dae17c4ecaaac8ce2c526870fb49894 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0daf1060cc8304126b292902d5732534 = $(`<div id="html_0daf1060cc8304126b292902d5732534" style="width: 100.0%; height: 100.0%;">Gastro: Lunch Manufaktur</div>`)[0];
+                popup_8dae17c4ecaaac8ce2c526870fb49894.setContent(html_0daf1060cc8304126b292902d5732534);
+            
+        
+
+        circle_marker_b17df6c2cf5dfb37bfd8a0175b96ee48.bindPopup(popup_8dae17c4ecaaac8ce2c526870fb49894)
+        ;
+
+        
+    
+    
+            var circle_marker_ff69158e96b84956b4e951f6d5d8e441 = L.circleMarker(
+                [50.7328579, 7.0970195],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_54a5e09b5565a89d8d3fdc4505fbf9f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4304706f0005540c7e7c3398386ec37 = $(`<div id="html_f4304706f0005540c7e7c3398386ec37" style="width: 100.0%; height: 100.0%;">Shopping: Seldi</div>`)[0];
+                popup_54a5e09b5565a89d8d3fdc4505fbf9f4.setContent(html_f4304706f0005540c7e7c3398386ec37);
+            
+        
+
+        circle_marker_ff69158e96b84956b4e951f6d5d8e441.bindPopup(popup_54a5e09b5565a89d8d3fdc4505fbf9f4)
+        ;
+
+        
+    
+    
+            var circle_marker_c41cd2ac43e5cc7a87d419a8f451162f = L.circleMarker(
+                [50.7329471, 7.0971929],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_bb562cea69f65f937716a62bffc2163d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aea9082f18e01e262c1617c62119fd8e = $(`<div id="html_aea9082f18e01e262c1617c62119fd8e" style="width: 100.0%; height: 100.0%;">Gastro: Starbucks</div>`)[0];
+                popup_bb562cea69f65f937716a62bffc2163d.setContent(html_aea9082f18e01e262c1617c62119fd8e);
+            
+        
+
+        circle_marker_c41cd2ac43e5cc7a87d419a8f451162f.bindPopup(popup_bb562cea69f65f937716a62bffc2163d)
+        ;
+
+        
+    
+    
+            var circle_marker_9831ee42e55aba42647047642a32f5fd = L.circleMarker(
+                [50.7324744, 7.0987721],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_3e7dfb56be9734b425a886f4eeebe51c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf83272a38fb6533bd1e67af17c1975a = $(`<div id="html_bf83272a38fb6533bd1e67af17c1975a" style="width: 100.0%; height: 100.0%;">Sonstiges: Euroschule</div>`)[0];
+                popup_3e7dfb56be9734b425a886f4eeebe51c.setContent(html_bf83272a38fb6533bd1e67af17c1975a);
+            
+        
+
+        circle_marker_9831ee42e55aba42647047642a32f5fd.bindPopup(popup_3e7dfb56be9734b425a886f4eeebe51c)
+        ;
+
+        
+    
+    
+            var circle_marker_f3f3d8f6e8fe46bc7a8cf901e7a730fa = L.circleMarker(
+                [50.7330602, 7.0989862],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_de8d536e952d0d615c6a65847f8844ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e58e905a2d010bd86118de3efab46172 = $(`<div id="html_e58e905a2d010bd86118de3efab46172" style="width: 100.0%; height: 100.0%;">Gastro: Puppenküche</div>`)[0];
+                popup_de8d536e952d0d615c6a65847f8844ee.setContent(html_e58e905a2d010bd86118de3efab46172);
+            
+        
+
+        circle_marker_f3f3d8f6e8fe46bc7a8cf901e7a730fa.bindPopup(popup_de8d536e952d0d615c6a65847f8844ee)
+        ;
+
+        
+    
+    
+            var circle_marker_1f9c211a80d929afa9f5afab609a3ebf = L.circleMarker(
+                [50.7312098, 7.0981266],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_53b84053f3f8f93977f2e24a09ebadf6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2fb53f9be8a087831006e6c3e59eb0df = $(`<div id="html_2fb53f9be8a087831006e6c3e59eb0df" style="width: 100.0%; height: 100.0%;">Gastro: Mandala</div>`)[0];
+                popup_53b84053f3f8f93977f2e24a09ebadf6.setContent(html_2fb53f9be8a087831006e6c3e59eb0df);
+            
+        
+
+        circle_marker_1f9c211a80d929afa9f5afab609a3ebf.bindPopup(popup_53b84053f3f8f93977f2e24a09ebadf6)
+        ;
+
+        
+    
+    
+            var circle_marker_860b83df52ab21226c646c69df590b55 = L.circleMarker(
+                [50.7334604, 7.0973072],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_b7c6644496e7b274933b187339a1d6b5);
+        
+    
+        var popup_40342247a7b8ed25edc30c4d454246a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be25bc19b5ef82163f73ec26097f03c5 = $(`<div id="html_be25bc19b5ef82163f73ec26097f03c5" style="width: 100.0%; height: 100.0%;">Sonstiges: Fahrschule Rettig</div>`)[0];
+                popup_40342247a7b8ed25edc30c4d454246a0.setContent(html_be25bc19b5ef82163f73ec26097f03c5);
+            
+        
+
+        circle_marker_860b83df52ab21226c646c69df590b55.bindPopup(popup_40342247a7b8ed25edc30c4d454246a0)
+        ;
+
+        
+    
+    
+            marker_cluster_b7c6644496e7b274933b187339a1d6b5.addTo(map_13b77040ddee95b20a4d8914b7ad753b);
+        
+    
+            var marker_6a9e58e6660999df2fea75dbec570e08 = L.marker(
+                [50.732063, 7.096739],
+                {
+}
+            ).addTo(map_13b77040ddee95b20a4d8914b7ad753b);
+        
+    
+            var icon_59fc8c065519c95ba7fc40e1ae96b44b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17e70ee2706b56c9c1ffc53eb2d2daec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2bb26d3457286a438f658f3dc654978 = $(`<div id="html_d2bb26d3457286a438f658f3dc654978" style="width: 100.0%; height: 100.0%;"><b>SMLS Center</b></div>`)[0];
+                popup_17e70ee2706b56c9c1ffc53eb2d2daec.setContent(html_d2bb26d3457286a438f658f3dc654978);
+            
+        
+
+        marker_6a9e58e6660999df2fea75dbec570e08.bindPopup(popup_17e70ee2706b56c9c1ffc53eb2d2daec)
+        ;
+
+        
+    
+    
+                marker_6a9e58e6660999df2fea75dbec570e08.setIcon(icon_59fc8c065519c95ba7fc40e1ae96b44b);
+            
+    
+            var circle_bdf91d936b12f79f5b7a3d7bafc295d7 = L.circle(
+                [50.732063, 7.096739],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200, "stroke": true, "weight": 1}
+            ).addTo(map_13b77040ddee95b20a4d8914b7ad753b);
+        
+</script>
+</html>
